@@ -1,0 +1,9 @@
+{
+  "select_language": "Selecionar idioma",
+  "send_otp": "Enviar código",
+  "verify_otp": "Verificar código",
+  "enter_email": "Digite seu e-mail",
+  "enter_phone": "Digite seu número de telefone",
+  "enter_otp": "Digite o código",
+  "language_verified": "Idioma verificado!"
+}

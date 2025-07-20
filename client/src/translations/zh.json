@@ -1,0 +1,9 @@
+{
+  "select_language": "选择语言",
+  "send_otp": "发送验证码",
+  "verify_otp": "验证验证码",
+  "enter_email": "输入您的电子邮件",
+  "enter_phone": "输入您的电话号码",
+  "enter_otp": "输入验证码",
+  "language_verified": "语言已验证！"
+}
