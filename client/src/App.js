@@ -7,7 +7,6 @@ import Navbar from './component/Navbar/navbar';
 import Allroutes from './Allroutes';
 import { fetchallusers } from './action/users';
 import { fetchallquestion } from './action/question';
-
 import './i18n'; 
 import LanguageSwitcher from './component/LanguageSwitcher'; 
 
@@ -39,7 +38,7 @@ function App() {
         
         <Routes>
           {/* ✅ Explicit route for LanguageSwitcher page */}
-          <Route path="/LanguageSwitcher" element={<LanguageSwitcher />} />
+          <Route path="/language-switcher" element={<LanguageSwitcher />} />
 
           {/* ✅ All app routes go through Allroutes component */}
           <Route path="/*" element={
