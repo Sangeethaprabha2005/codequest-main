@@ -36,7 +36,7 @@ const LanguageSwitcher = () => {
 
   const sendEmailOtp = async (email) => {
     try {
-      const res = await axios.post('http://localhost:5000/send-email-otp', { email });
+      const res = await axios.post('https://codequest-main.onrender.com/send-email-otp', { email });
       if (res.data.success) {
         alert('OTP sent to your email.');
         setOtpSent(true);
@@ -70,7 +70,7 @@ const LanguageSwitcher = () => {
   const verifyOtp = async () => {
     try {
       if (selectedLang === 'fr') {
-        const res = await axios.post('http://localhost:5000/verify-email-otp', {
+        const res = await axios.post('https://codequest-main.onrender.com/verify-email-otp', {
           email,
           otp,
         });
