@@ -53,7 +53,7 @@ const OTPModal = ({ visible, mode, onClose, onSuccess, contactInfo }) => {
   const sendEmailOTP = async (email) => {
     setLoading(true);
     try {
-      await fetch('https://codeflo.onrender.com/send-email-otp', {
+      await fetch('https://codequest-main.onrender.com/send-email-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -72,7 +72,7 @@ const OTPModal = ({ visible, mode, onClose, onSuccess, contactInfo }) => {
       try {
         const result = await confirmationResult.confirm(otp);
         const phoneNumber = result.user.phoneNumber;
-        const res = await fetch('https://codeflo.onrender.com/api/auth/phone-auth', {
+        const res = await fetch('https://codequest-main.onrender.com/api/auth/phone-auth', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ phoneNumber }),
@@ -91,7 +91,7 @@ const OTPModal = ({ visible, mode, onClose, onSuccess, contactInfo }) => {
       }
     } else if (mode === 'email') {
       try {
-        const res = await fetch('https://codeflo.onrender.com/verify-email-otp', {
+        const res = await fetch('https://codequest-main.onrender.com/verify-email-otp', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: contactInfo, otp }),
