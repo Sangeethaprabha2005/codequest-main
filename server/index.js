@@ -21,7 +21,7 @@ app.use("/questions", questionroutes);
 app.use("/answer", answerroutes);
 
 app.get("/", (req, res) => {
-  res.send("Codeflow API running on Vercel!");
+  res.send("Codequest API running on Vercel!");
 });
 
 const MONGO_URI = process.env.MONGO_URI;
